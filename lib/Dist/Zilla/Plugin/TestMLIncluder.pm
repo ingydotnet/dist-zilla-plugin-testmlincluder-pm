@@ -2,8 +2,7 @@ package Dist::Zilla::Plugin::TestMLIncluder;
 use version;
 use Moose;
 
-use version;
-use MooseX::Types::Perl 'VersionObject';
+extends 'Dist::Zilla::Plugin::ModuleIncluder';
 
 has module => (
   isa => 'ArrayRef[Str]',
@@ -11,12 +10,30 @@ has module => (
   handles => {
     modules => 'elements',
   },
-  default => [
-  ],
+  default => sub {[qw(
+    Pegex::Input
+    Pegex::Grammar
+    Pegex::Base
+    Pegex::Parser
+    Pegex::Tree
+    Pegex::Receiver
+    TestML::Util
+    TestML::Compiler::Pegex::Grammar
+    TestML::Compiler::Pegex::AST
+    TestML::Compiler::Pegex
+    TestML::Library::Debug
+    TestML::Library::Standard
+    TestML::Compiler
+    TestML::Runtime::TAP
+    TestML::Runtime
+    TestML::Base
+    TestML::Bridge
+    TestML
+  )]},
 );
 
 sub gather_files {
-  my ($self) = shift;
+  my $self = shift;
   my $pegex = '../pegex-pm';
   my $testml = '../testml-pm';
   if (
