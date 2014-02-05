@@ -20,6 +20,7 @@ has module => (
     Pegex::Tree
     Pegex::Receiver
     TestML::Util
+    TestML::Compiler::Lite
     TestML::Compiler::Pegex::Grammar
     TestML::Compiler::Pegex::AST
     TestML::Compiler::Pegex
