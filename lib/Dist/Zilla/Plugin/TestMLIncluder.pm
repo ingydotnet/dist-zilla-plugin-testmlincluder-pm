@@ -1,6 +1,8 @@
 package Dist::Zilla::Plugin::TestMLIncluder;
-use version;
+
 use Moose;
+
+# ABSTRACT: Ship your TestML version
 
 extends 'Dist::Zilla::Plugin::ModuleIncluder';
 
@@ -54,10 +56,6 @@ no Moose;
 1;
 
 __END__
-
-=head1 NAME
-
-Dist::Zilla::Plugin::TestMLIncluder - Ship your TestML version
 
 =head1 SYNOPSIS
 
