@@ -35,6 +35,18 @@ has module => (
   )]},
 );
 
+has blacklist => (
+    isa => 'ArrayRef[Str]',
+    traits => ['Array'],
+    handles => {
+        blacklisted_modules => 'elements',
+    },
+    default => sub {[qw(
+        XXX
+    )]},
+);
+
+
 sub gather_files {
   my $self = shift;
   my $pegex = '../pegex-pm';
