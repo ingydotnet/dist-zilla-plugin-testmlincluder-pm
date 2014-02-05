@@ -43,6 +43,7 @@ has blacklist => (
     },
     default => sub {[qw(
         XXX
+        TestML::Object
     )]},
 );
 
