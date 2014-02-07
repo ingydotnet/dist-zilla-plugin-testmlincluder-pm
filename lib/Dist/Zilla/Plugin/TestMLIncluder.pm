@@ -69,7 +69,11 @@ no Moose;
 
 1;
 
-__END__
+=encoding utf8
+
+=head1 NAME
+
+Dist::Zilla::Plugin::TestMLIncluder - Ship your TestML version
 
 =head1 SYNOPSIS
 
@@ -79,4 +83,20 @@ In dist.ini:
 
 =head1 DESCRIPTION
 
-This module includes the version of TestML on your system with your module dist.
+This module includes the version of TestML on your system with your module
+dist.
+
+=head1 AUTHOR
+
+Ingy döt Net <ingy@cpan.org>
+
+=head1 COPYRIGHT
+
+Copyright (c) 2014. Ingy döt Net.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
+See http://www.perl.com/perl/misc/Artistic.html
+
+=cut
