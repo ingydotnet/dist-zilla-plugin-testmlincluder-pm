@@ -50,15 +50,17 @@ has blacklist => (
 
 sub gather_files {
   my $self = shift;
-  my $pegex = '../pegex-pm';
-  my $testml = '../testml-pm';
-  if (
-    -d "$pegex/.git" and
-    -d "$testml/.git"
-  ) {
-    eval "use lib '$pegex/lib', '$testml/lib'; 1" or die $@;
-    $self->SUPER::gather_files(@_);
-    return;
+  for my $prefix (qw(.. ../..)) {
+    my $pegex = "$prefix/pegex-pm";
+    my $testml = "$prefix/testml-pm";
+    if (
+        -d "$pegex/.git" and
+        -d "$testml/.git"
+    ) {
+        eval "use lib '$pegex/lib', '$testml/lib'; 1" or die $@;
+        $self->SUPER::gather_files(@_);
+        return;
+    }
   }
   die "Pegex and TestML repos missing or not in right state";
 }
