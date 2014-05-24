@@ -1,0 +1,28 @@
+=meta: 0.0.1
+
+name: Dist-Zilla-Plugin-TestMLIncluder
+version: 0.02
+abstract: Ship your TestML version
+homepage: http://testml.org
+
+license: perl
+copyright: 2014. Ingy döt Net
+author:
+  name: Ingy döt Net
+  email: ingy@cpan.org
+  github: ingydotnet
+  twitter: ingydotnet
+  freenode: ingy
+  homepage: http://ingy.net
+
+requires:
+  perl: 5.8.1
+  Dist::Zilla::Plugin::ModuleIncluder: 0
+  Moose: 0
+
+devel:
+  git: git@github.org/ingydotnet/dist-zilla-testmlincluder-pm
+  irc: irc.perl.org/distzilla
+  bug: https://github.com/ingydotnet/dit-zilla-testmlincluder/issues/
+
+=travis: perl
