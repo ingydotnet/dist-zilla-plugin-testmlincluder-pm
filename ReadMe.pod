@@ -10,11 +10,15 @@ See http://github.com/ingydotnet/kwim-pm#readme
 
 Dist::Zilla::Plugin::TestMLIncluder - Ship your TestML version
 
+=for html
+<a href="https://travis-ci.org/ingydotnet/dist-zilla-plugin-testmlincluder-pm"><img src="https://travis-ci.org/ingydotnet/dist-zilla-plugin-testmlincluder-pm.png" alt="dist-zilla-plugin-testmlincluder-pm"></a>
+<a href="https://coveralls.io/r/ingydotnet/dist-zilla-plugin-testmlincluder-pm?branch=master"><img src="https://coveralls.io/repos/ingydotnet/dist-zilla-plugin-testmlincluder-pm/badge.png" alt="dist-zilla-plugin-testmlincluder-pm"></a>
+
 =head1 SYNOPSIS
 
 In dist.ini:
 
-     [TestMLIncluder]
+    [TestMLIncluder]
 
 =head1 DESCRIPTION
 

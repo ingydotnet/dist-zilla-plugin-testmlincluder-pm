@@ -3,11 +3,13 @@ Dist::Zilla::Plugin::TestMLIncluder
 
 Ship your TestML version
 
+<badge travis coveralls ingydotnet/dist-zilla-plugin-testmlincluder-pm>
+
 = Synopsis
 
 In dist.ini:
 
-   [TestMLIncluder]
+  [TestMLIncluder]
 
 = Description
 
