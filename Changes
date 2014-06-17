@@ -1,4 +1,9 @@
 ---
+version: 0.04
+date:    Tue Jun 17 11:02:16 PDT 2014
+changes:
+- Remove ABSTRACT and add manual $VERSION
+---
 version: 0.03
 date:    Sat Jun 14 12:18:41 PDT 2014
 changes:

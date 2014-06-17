@@ -1,6 +1,5 @@
-# ABSTRACT: Ship your TestML version
-
 package Dist::Zilla::Plugin::TestMLIncluder;
+our $VERSION = '0.04';
 
 use Moose;
 
