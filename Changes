@@ -1,4 +1,9 @@
 ---
+version: 0.07
+date:    Fri Aug  8 19:04:24 PDT 2014
+changes:
+- Add Pegex::Optimizer to includes
+---
 version: 0.06
 date:    Sun Aug  3 22:47:18 PDT 2014
 changes:

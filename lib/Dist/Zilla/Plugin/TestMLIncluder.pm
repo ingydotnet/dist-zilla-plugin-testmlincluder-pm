@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::TestMLIncluder;
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 use Moose;
 
@@ -15,6 +15,7 @@ has module => (
     Pegex::Input
     Pegex::Grammar
     Pegex::Base
+    Pegex::Optimizer
     Pegex::Parser
     Pegex::Tree
     Pegex::Receiver
