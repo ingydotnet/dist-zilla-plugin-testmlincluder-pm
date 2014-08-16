@@ -1,7 +1,7 @@
 =meta: 0.0.1
 
 name: Dist-Zilla-Plugin-TestMLIncluder
-version: 0.09
+version: 0.10
 abstract: Ship your TestML version
 homepage: http://testml.org
 
@@ -23,6 +23,6 @@ requires:
 devel:
   git: https://github.com/ingydotnet/dist-zilla-testmlincluder-pm
   bug: https://github.com/ingydotnet/dit-zilla-testmlincluder/issues
-  irc: irc.perl.org#distzilla
+  irc: irc.freenode.net#pkg
 
 =travis: perl
