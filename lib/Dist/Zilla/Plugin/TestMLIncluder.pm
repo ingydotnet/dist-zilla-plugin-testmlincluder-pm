@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::TestMLIncluder;
-our $VERSION = '0.13';
+our $VERSION = '0.14';
 
 use Moose;
 with 'Dist::Zilla::Role::FileGatherer';
