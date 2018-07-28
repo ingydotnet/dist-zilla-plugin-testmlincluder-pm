@@ -23,5 +23,6 @@ devel:
 
 requires:
   perl: 5.8.1
-  Dist::Zilla::Plugin::ModuleIncluder: 0
+  Dist::Zilla: 0
+  IO::All: 0
   Moose: 0
