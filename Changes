@@ -1,4 +1,9 @@
 ---
+version: 0.17
+date:    Sun Nov 11 16:07:22 PST 2018
+changes:
+- Use quotes where %0 might contain spaces. @mohawk2++
+---
 version: 0.16
 date:    Mon Aug 27 08:27:44 PDT 2018
 changes:
